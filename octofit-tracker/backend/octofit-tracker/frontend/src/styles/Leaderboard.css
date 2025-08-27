@@ -1,0 +1,68 @@
+.leaderboard-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-table th {
+  background-color: #4B0082;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.leaderboard-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* First place - Jungle Green */
+.first-place {
+  background-color: rgba(29, 170, 96, 0.15);
+}
+
+.first-place td {
+  color: #1DAA60;
+  font-weight: bold;
+}
+
+/* Second place - Orange */
+.second-place {
+  background-color: rgba(255, 140, 0, 0.15);
+}
+
+.second-place td {
+  color: #FF8C00;
+  font-weight: bold;
+}
+
+/* Trophy icons for top positions */
+.leaderboard-table td:first-child {
+  position: relative;
+}
+
+.first-place td:first-child::before {
+  content: "🏆";
+  margin-right: 5px;
+}
+
+.second-place td:first-child::before {
+  content: "🥈";
+  margin-right: 5px;
+}
+
+.leaderboard-table tr:nth-child(3) td:first-child::before {
+  content: "🥉";
+  margin-right: 5px;
+}
